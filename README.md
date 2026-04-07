@@ -5,6 +5,9 @@
 A minimal but extensible bioinformatics system for biologically informed CRISPR off-target risk assessment.
 
 ## Demo1: OffTarget Oracle
+
+OffTarget Oracle is a CRISPR off-target assessment demo built on GenieClaw. It showcases a multi-agent workflow that annotates candidate off-target sites, scores their potential biological impact, and produces an interpretable risk report for downstream analysis.
+
 ### Purpose
 
 Given an sgRNA sequence and candidate off-target genomic coordinates, this system:
