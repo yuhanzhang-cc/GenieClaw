@@ -18,9 +18,7 @@ Given an sgRNA sequence and candidate off-target genomic coordinates, this syste
 - **Offline-capable**: No runtime internet access required
 
 ## Project Structure
-
 <img width="1536" height="1024" alt="schematic" src="https://github.com/user-attachments/assets/a87d0e75-9411-425e-b416-ad377585e532" />
-
 ```
 crispr_offtarget_agent/
 ├── README.md                    # This file
