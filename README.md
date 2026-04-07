@@ -1,7 +1,6 @@
 # CRISPR Off-Target Risk Assessment Agent
 
 A minimal but extensible bioinformatics system for biologically informed CRISPR off-target risk assessment.
-<img width="1536" height="1024" alt="schematic" src="https://github.com/user-attachments/assets/95936120-b809-478b-b679-592f2ed1fe87" />
 
 ## Purpose
 
@@ -19,6 +18,8 @@ Given an sgRNA sequence and candidate off-target genomic coordinates, this syste
 - **Offline-capable**: No runtime internet access required
 
 ## Project Structure
+
+<img width="1536" height="1024" alt="schematic" src="https://github.com/user-attachments/assets/a87d0e75-9411-425e-b416-ad377585e532" />
 
 ```
 crispr_offtarget_agent/
