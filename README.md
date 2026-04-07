@@ -129,6 +129,3 @@ python -m pytest tests/
 python -m pytest tests/test_scoring.py -v
 ```
 
-## License
-
-MIT
