@@ -2,7 +2,7 @@
 ## A genomics-focused AI assistant built on OpenClaw for modular biological problem solving
 <img width="1024" height="253" alt="image" src="https://github.com/user-attachments/assets/599128da-cb00-4f92-ba3c-360db2c0f926" />
 
-GenieClaw is a genomics-focused AI research assistant built on top of OpenClaw. It is designed to help researchers tackle genome-related biological problems through modular, interpretable, and extensible analysis workflows. Rather than acting as a generic chatbot, GenieClaw organizes domain-specific skills and demo pipelines to solve concrete tasks, such as CRISPR off-target risk assessment, in a structured and reproducible way. As more demos are added, GenieClaw can evolve from executing individual pipelines to selecting the most suitable workflow for a given biological question.
+GenieClaw is a genomics-oriented assistant built on OpenClaw, designed not merely to aggregate bioinformatics skills, but to organize them into governed, reusable, and reproducible workflow templates for biological problem solving. In GenieClaw, tools are execution primitives, skills are domain operating instructions, demos are validated problem-specific workflows, and the router is a bounded selector that maps user questions to the right workflow. The long-term goal is not unconstrained autonomy, but reliable genomics task routing over a curated library of high-quality workflows.
 
 ## Layer & Structure
 ```
