@@ -6,6 +6,7 @@ GenieClaw is a genomics-focused AI research assistant built on top of OpenClaw. 
 
 ## Layer & Structure
 
+```
 ┌─────────────────────────────────────────────────────────────┐
 │                      用户输入                                 │
 └─────────────────────────────────────────────────────────────┘
@@ -28,6 +29,7 @@ GenieClaw is a genomics-focused AI research assistant built on top of OpenClaw. 
 ┌─────────────────────────────────────────────────────────────┐
 │                   最终报告 (JSON + TXT)                      │
 └─────────────────────────────────────────────────────────────┘
+
 
 ## Demo1: OffTarget Oracle
 
