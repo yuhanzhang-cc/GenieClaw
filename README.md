@@ -4,6 +4,30 @@
 
 GenieClaw is a genomics-focused AI research assistant built on top of OpenClaw. It is designed to help researchers tackle genome-related biological problems through modular, interpretable, and extensible analysis workflows. Rather than acting as a generic chatbot, GenieClaw organizes domain-specific skills and demo pipelines to solve concrete tasks, such as CRISPR off-target risk assessment, in a structured and reproducible way. As more demos are added, GenieClaw can evolve from executing individual pipelines to selecting the most suitable workflow for a given biological question.
 
+## Layer & Structure
+┌─────────────────────────────────────────────────────────────┐
+│                      用户输入                                 │
+└─────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│              Router Agent (读 genieclaw-router.md)           │
+│  "这个任务是脱靶预测 → 路由到 OffTarget Oracle"                │
+└─────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Demo 执行器                               │
+│  ┌─────────────────┐  ┌─────────────────┐                  │
+│  │ OffTarget Oracle│  │ Variant Annotat.│  ...             │
+│  │  └─ Skill A     │  │  └─ Skill X     │                  │
+│  │  └─ Skill B     │  │  └─ Skill Y     │                  │
+│  │  └─ LLM         │  │                 │                  │
+│  └─────────────────┘  └─────────────────┘                  │
+└─────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   最终报告 (JSON + TXT)                      │
+└─────────────────────────────────────────────────────────────┘
+
 ## Demo1: OffTarget Oracle
 
 OffTarget Oracle is a CRISPR off-target assessment demo built on GenieClaw. It showcases a multi-agent workflow that annotates candidate off-target sites, scores their potential biological impact, and produces an interpretable risk report for downstream analysis.
